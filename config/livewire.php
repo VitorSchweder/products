@@ -157,4 +157,6 @@ return [
     */
 
     'pagination_theme' => 'tailwind',
+
+    'back_button_cache' => false,
 ];
