@@ -8,21 +8,25 @@
    ```
 3. Suba os containers Docker:
    ```bash
-    docker-compose up -d --build
+    docker compose up -d --build
    ```
 4. Instalar as dependências e publicar livewire:
    ```bash
-    docker-compose exec app composer require livewire/livewire
-    docker-compose exec app php artisan livewire:publish
+    docker compose exec app composer require livewire/livewire
+    docker compose exec app php artisan livewire:publish
     docker compose exec app composer install
    ```
 5. Configure o ambiente:
    ```bash
     cp .env.example .env
-    docker-compose exec app php artisan key:generate
+    docker compose exec app php artisan key:generate
    ```
 6. Rode as migrations e seeders:
    ```bash
-    docker-compose exec app php artisan migrate --seed
+    docker compose exec app php artisan migrate --seed
    ```
-7. Acesse no navegador: [http://localhost:8080](http://localhost:8080)
+7. Para executar os testes:
+   ```bash
+    docker compose exec app php artisan test
+   ```
+8. Acesse no navegador: [http://localhost:8080](http://localhost:8080)

@@ -16,6 +16,9 @@ class ProductSeeder extends Seeder {
             ['name' => 'Produto 1', 'category_id' => $categories->firstWhere('name', 'Categoria 1')->id, 'brand_id' => $brands->firstWhere('name', 'Marca 1')->id],
             ['name' => 'Produto 2', 'category_id' => $categories->firstWhere('name', 'Categoria 2')->id, 'brand_id' => $brands->firstWhere('name', 'Marca 2')->id],
             ['name' => 'Produto 3', 'category_id' => $categories->firstWhere('name', 'Categoria 3')->id, 'brand_id' => $brands->firstWhere('name', 'Marca 3')->id],
+            ['name' => 'Produto 4', 'category_id' => $categories->firstWhere('name', 'Categoria 1')->id, 'brand_id' => $brands->firstWhere('name', 'Marca 1')->id],
+            ['name' => 'Produto 5', 'category_id' => $categories->firstWhere('name', 'Categoria 2')->id, 'brand_id' => $brands->firstWhere('name', 'Marca 2')->id],
+            ['name' => 'Produto 6', 'category_id' => $categories->firstWhere('name', 'Categoria 3')->id, 'brand_id' => $brands->firstWhere('name', 'Marca 3')->id],
         ]);
     }
 }

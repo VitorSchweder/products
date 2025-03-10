@@ -52,6 +52,7 @@ class ProductSearch extends Component {
             ->when(!empty($this->selectedBrands), function ($query) {
                 $query->whereIn('brand_id', $this->selectedBrands);
             })
+            ->orderBy('products.name')
             ->get();
     }
 
